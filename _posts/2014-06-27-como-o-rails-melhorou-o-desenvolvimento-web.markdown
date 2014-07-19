@@ -9,7 +9,7 @@ categories: cafe-com-dev
 No Café com Dev de Junho, [Thiago Borges][borges-twitter] falou sobre como o Rails
 melhorou o desenvolvimeno web.
 
-O vídeo estará disponível em breve.
+<iframe width="772" height="480" src="//www.youtube.com/embed/WTiBDh9J_GM" frameborder="0" allowfullscreen></iframe>
 
 <script async class="speakerdeck-embed" data-id="ceab65e0e21301312bd84edea5a75f20" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 
