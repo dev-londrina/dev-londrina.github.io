@@ -2,12 +2,25 @@
 layout: default
 title: TI Londrina
 ---
+{% assign upcoming_event_pages = (site.posts | where:"soon","true") %}
 
 <div id="home">
-  <h1>Posts</h1>
+  {% if upcoming_event_pages.size > 0 %}
+    <h2>Em breve</h2>
+    <ul class="posts">
+
+      {% for post in upcoming_event_pages %}
+        <li><span>{{ post.date | date: "%d/%m/%Y" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  <h2>Posts</h2>
   <ul class="posts">
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% if post.soon != "true" %}
+        <li><span>{{ post.date | date: "%d/%m/%Y" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endif %}
     {% endfor %}
   </ul>
 </div>
