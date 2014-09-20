@@ -7,7 +7,7 @@ categories: cafe-com-dev
 
 
 No Café com Dev de Junho, [Thiago Borges][borges-twitter] falou sobre como o Rails
-melhorou o desenvolvimeno web.
+melhorou o desenvolvimento web.
 
 <iframe width="772" height="480" src="//www.youtube.com/embed/WTiBDh9J_GM" frameborder="0" allowfullscreen></iframe>
 
